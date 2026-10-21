@@ -1,0 +1,58 @@
+{
+  "kirin": {
+    "file": "Chinese Kirin Figurine.sog",
+    "url": "/models/Chinese%20Kirin%20Figurine.sog",
+    "bytes": 5827678,
+    "sha256": "389cf93c337a945892e41ec702309814faa0c005bdc30607baa9e1975e689839",
+    "original": "Chinese Kirin Figurine.sog"
+  },
+  "david": {
+    "file": "David Bust - Reconstructed with Seeget3D.sog",
+    "url": "/models/David%20Bust%20-%20Reconstructed%20with%20Seeget3D.sog",
+    "bytes": 9050828,
+    "sha256": "4997c227e0e49481be8d8efc9a7272965e011915113b0acd6f054bf86dcdbd29",
+    "original": "David Bust - Reconstructed with Seeget3D.sog"
+  },
+  "buddha": {
+    "file": "Head of Buddha.sog",
+    "url": "/models/Head%20of%20Buddha.sog",
+    "bytes": 5108466,
+    "sha256": "bc3ed5a9c73e982ccb9d24d48f75e7e30528baa1f41681c51efa3f6adfbae826",
+    "original": "Head of Buddha.sog"
+  },
+  "girl": {
+    "file": "Kiel - Girl with child.sog",
+    "url": "/models/Kiel%20-%20Girl%20with%20child.sog",
+    "bytes": 42634181,
+    "sha256": "1176da44b966c9d08782f654ca348258c5940244721e9216668bfe4b8265a0cb",
+    "original": "Kiel - Girl with child.sog"
+  },
+  "boy": {
+    "file": "Kiel - Newspaper Boy.sog",
+    "url": "/models/Kiel%20-%20Newspaper%20Boy.sog",
+    "bytes": 48059510,
+    "sha256": "32670e8969fb1f3d2f70d2fa27d9dfd84bc9af5468154ad8c7078ae45730d80a",
+    "original": "Kiel - Newspaper Boy.sog"
+  },
+  "sunflowers": {
+    "file": "Sunflowers in a stone jug.sog",
+    "url": "/models/Sunflowers%20in%20a%20stone%20jug.sog",
+    "bytes": 7285147,
+    "sha256": "2f14d9bf43622f81365bea18cd46d7e36888cf3d0095561e90857a9c116633c3",
+    "original": "Sunflowers in a stone jug.sog"
+  },
+  "boar": {
+    "file": "Wild boar.sog",
+    "url": "/models/Wild%20boar.sog",
+    "bytes": 4163455,
+    "sha256": "f58cde3e6ab212280d24dcb1312e3bf5a266450f65e79802415a9febe6a15d8d",
+    "original": "Wild boar.sog"
+  },
+  "horse": {
+    "file": "唐代三彩陶马｜Tang Dynasty Ceramic Horse.sog",
+    "url": "/models/%E5%94%90%E4%BB%A3%E4%B8%89%E5%BD%A9%E9%99%B6%E9%A9%AC%EF%BD%9CTang%20Dynasty%20Ceramic%20Horse.sog",
+    "bytes": 15089025,
+    "sha256": "1b074885b48f1b3cd9d34d2fdca63beefba9ac2ffed2f4548c0cf74994b21d7b",
+    "original": "唐代三彩陶马｜Tang Dynasty Ceramic Horse.sog"
+  }
+}

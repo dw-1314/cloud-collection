@@ -1,0 +1,31 @@
+# 默认忽略所有项目根目录内容
+/*
+# 仅允许网站必需的源码与配置
+!/.gitignore
+!/index.html
+!/package.json
+!/package-lock.json
+!/tsconfig.json
+!/vite.config.ts
+!/src/
+!/public/
+!/.github/
+# 禁止上传私人文件与敏感配置
+**/*.pdf
+**/*.doc
+**/*.docx
+**/*.xls
+**/*.xlsx
+**/*.ppt
+**/*.pptx
+**/*.pem
+**/*.key
+**/*.pfx
+**/*.p12
+**/*.log
+**/.env
+**/.env.*
+**/.npmrc
+**/*credential*
+**/*secret*
+**/*token*

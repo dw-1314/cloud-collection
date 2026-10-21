@@ -1,0 +1,30 @@
+import models from './models.json';
+import type { ViewModel, ViewConfig } from '../viewer/SplatViewer';
+export type ArtId = keyof typeof models;
+export interface Artwork extends ViewModel { id:ArtId; en:string; hall:number; category:string; era:string; culture:string; material:string; artist:string; publisher:string; handle:string; scene:string; collection:string; description:string; observation:string; language:string; idea:string; detail:string; bytes:number; image:string; }
+export const halls = [
+ {id:1,name:'东方古韵',en:'ECHOES OF THE EAST',subtitle:'在流转的时光里，遇见东方。',description:'从佛首的静穆到陶马的昂扬，在形与神之间，寻找穿越时间的艺术回响。',featured:'buddha'},
+ {id:2,name:'雕塑之美',en:'THE HUMAN FORM',subtitle:'凝固的姿态，流动的情感。',description:'凝视、守护与日常相遇。让人物雕塑带领我们，重新理解身体与情感的语言。',featured:'david'},
+ {id:3,name:'器物与静物',en:'POETRY OF THE EVERYDAY',subtitle:'平凡之物，自有不凡。',description:'一束花，一只小小的动物。慢下来，看见材质、轮廓与日常生活中的诗意。',featured:'sunflowers'},
+];
+const entries: Omit<Artwork,'url'|'bytes'|'image'>[]=[
+ {id:'horse',name:'唐代三彩陶马',en:'Tang Dynasty Ceramic Horse',hall:1,category:'陶塑 · 动物',era:'唐代（来源标题；具体断代待核实）',culture:'中国 · 唐代文化题材',material:'施釉陶（来源描述）',artist:'待核实',publisher:'Liu',handle:'tsen',scene:'4ce87b73',collection:'待核实',description:'来源发布者以唐代陶马为题，强调马的造型与文化交流的联系。这件数字作品保留了釉色与表面细节，邀请我们从一件器物的轮廓，想象它所指向的时代。具体出土信息与馆藏归属仍待核实。',observation:'先沿着颈部到背部观察轮廓，再靠近观看釉色的变化。轮廓与表面，如何共同塑造一匹马的神采？',language:'动物造型；以整体轮廓建立动势。',idea:'策展视角：以马的形象讨论流动、交流与时代想象。',detail:'观察釉面与轮廓',view:{rotation:[180,180,0],yaw:140,pitch:8,distance:.95}},
+ {id:'kirin',name:'中国麒麟',en:'Chinese Kirin Figurine',hall:1,category:'雕塑 · 瑞兽',era:'待核实',culture:'中国 · 麒麟题材',material:'待核实',artist:'待核实',publisher:'Alfred Duemlein',handle:'alfred2010',scene:'e99f159a',collection:'待核实',description:'这件作品由 Alfred Duemlein 发布，题名为“中国麒麟”。数字记录将一件小型雕像带到屏幕前。来源未说明实物年代、材质与作者，本展以造型观察为线索，保留这些尚未确认的信息。',observation:'从整体姿态开始，再观察头部与身体表面的起伏。你会用哪些线条，概括这件瑞兽雕像？',language:'瑞兽题材；轮廓与表面细节相互呼应。',idea:'策展视角：从想象的动物形象出发，思考文化符号的表达。',detail:'观察头部造型',view:{rotation:[180,180,0],yaw:145,pitch:10,distance:.88}},
+ {id:'buddha',name:'犍陀罗佛首像',en:'Head of Buddha',hall:1,category:'雕塑 · 佛教造像',era:'贵霜时期 · 公元 2—3 世纪',culture:'巴基斯坦 · 古犍陀罗地区',material:'灰色片岩',artist:'待核实',publisher:'Ethan',handle:'ethan3111',scene:'34a7b7c3',collection:'芝加哥艺术博物馆 · 1975.517（据来源记录）',description:'来源记录将这件佛首归于贵霜时期的犍陀罗地区，材质为灰色片岩。安静的面容与起伏的发纹形成细腻对照。数字模型的来源链记录了芝加哥艺术博物馆的扫描、优化重制，以及 Ethan 发布的高斯模型。',observation:'让视线停留在眉弓、眼睑与发纹之间。坚硬的石材，怎样呈现柔和而安静的表情？',language:'面部趋于对称；波浪状发纹与平缓面部形成对照。',idea:'策展视角：借由凝视，讨论精神性如何进入人的形象。',detail:'观察眉眼与发纹',view:{rotation:[180,180,0],yaw:165,pitch:3,distance:.92}},
+ {id:'david',name:'大卫胸像',en:'David Bust',hall:2,category:'雕塑 · 石膏胸像',era:'所扫描石膏胸像的制作年代待核实',culture:'欧洲 · 大卫形象的复制与传播',material:'石膏（据发布者描述）',artist:'原型：米开朗基罗；此石膏胸像制作者待核实',publisher:'Seeget3D',handle:'seeget3d',scene:'0f3ca7df',collection:'待核实',description:'这是一件大卫石膏胸像的数字重建，由 Seeget3D 发布。来源明确说明了手机采集与自动背景移除的过程。我们看到的是一件石膏复制品的扫描，不能把它与米开朗基罗的原作实物混为一谈。',observation:'转动视角，留意头部朝向与颈肩之间的关系。同一个表情，是否会随着观察角度改变？',language:'头部与胸肩的转向，构成富有张力的姿态。',idea:'策展视角：讨论经典形象如何通过复制与数字技术被重新观看。',detail:'观察头部与颈肩',view:{rotation:[180,180,0],yaw:180,pitch:5,distance:.9}},
+ {id:'girl',name:'女孩与孩子',en:'Kiel · Girl with Child',hall:2,category:'雕塑 · 人物群像',era:'1956 年（据发布者描述）',culture:'德国 · 基尔公共艺术',material:'青铜（据发布者描述）',artist:'Fritz During（据发布者描述）',publisher:'Simon Bethke',handle:'simonbethke',scene:'3c5a49c4',collection:'德国基尔公共空间（据来源记录）',description:'来源将作品记为 Fritz During 于 1956 年创作的《Kinder und Kater》，亦称“女孩与孩子”。两个孩子与猫被组织成亲近的群像。相互靠近的身体，把日常的温柔留在了公共空间里。',observation:'观察人物之间的距离与手臂的连接。仅凭姿态，我们能读到怎样的关系？',language:'群像构图；重叠与相接的形体串联人物。',idea:'策展视角：从亲近的姿态中理解照护与共同生活。',detail:'观察人物间的联系',view:{rotation:[180,180,0],yaw:180,pitch:5,distance:.9}},
+ {id:'boy',name:'报童雕塑',en:'Kiel · Newspaper Boy',hall:2,category:'雕塑 · 城市人物',era:'待核实',culture:'德国 · 基尔城市生活',material:'青铜（据发布者描述）',artist:'待核实',publisher:'Simon Bethke',handle:'simonbethke',scene:'7f8aa35f',collection:'基尔《Kieler Nachrichten》报社建筑前（据来源记录）',description:'这座报童青铜雕塑位于基尔一家报社建筑前。发布者记述，当地人会以雕塑头顶何时留住第一场雪作为年度竞猜的主题。艺术因此也成为城市共同记忆的一部分。',observation:'围绕人物转动，观察站姿与手部动作。一个日常职业，如何成为可以被记住的城市形象？',language:'单人立像；动作与姿态让城市日常变得可见。',idea:'策展视角：讨论公共艺术与居民生活之间的联系。',detail:'观察人物姿态',view:{rotation:[180,180,0],yaw:180,pitch:6,distance:.92}},
+ {id:'sunflowers',name:'石壶向日葵',en:'Sunflowers in a Stone Jug',hall:3,category:'静物 · 花卉与器物',era:'实物布置与拍摄日期待核实',culture:'日常花卉静物',material:'向日葵与壶；壶的具体材质待核实',artist:'静物布置者待核实',publisher:'Alfred Duemlein',handle:'alfred2010',scene:'e2879fc1',collection:'待核实',description:'Alfred Duemlein 从一段手机视频出发，将花束与壶重建为可以转动观看的数字静物。来源记录了图像处理、训练与清理过程。易逝的花朵，在数字空间里获得了另一种停留方式。',observation:'观察花朵向不同方向展开的关系，再将视线移到承托它们的壶。轻盈与沉稳，如何在同一件静物里相遇？',language:'花束向外展开，与承托它的器形形成节奏对照。',idea:'策展视角：思考短暂之物的记录，以及日常观看的价值。',detail:'观察花束的层次',view:{rotation:[180,180,0],yaw:180,pitch:5,distance:.88}},
+ {id:'boar',name:'野猪雕像',en:'Wild Boar',hall:3,category:'雕塑 · 小型动物雕像',era:'待核实',culture:'动物题材小型雕像',material:'锡基合金（pewter，据发布者描述）',artist:'待核实',publisher:'Alfred Duemlein',handle:'alfred2010',scene:'df9b316e',collection:'待核实',description:'来源将这件作品描述为一尊小型 pewter 野猪雕像。具体年代与制作者未见说明。把小物件放大观看，能够重新注意到轮廓、体量与表面质感如何共同塑造动物形象。',observation:'比较背部的弧线与四肢支撑的方向。如果只留下剪影，你还能辨认出它吗？',language:'紧凑的动物体量；轮廓传达物种特征。',idea:'策展视角：以一件小型雕像，讨论尺度如何影响观看。',detail:'观察轮廓与表面',view:{rotation:[180,180,0],yaw:145,pitch:12,distance:.9}},
+];
+// Camera-only subject bounds, calibrated against the actual scans. No splats are removed.
+const calibrated:Partial<Record<ArtId,Partial<ViewConfig>>>={
+ david:{yaw:0,distance:1},
+ horse:{yaw:20,focus:{center:[6,0,-10],halfExtents:[20,23,10]},distance:1.05},
+ girl:{focus:{center:[0,-.9,0],halfExtents:[.85,1.2,.65]},distance:.54},
+ boy:{yaw:0,focus:{center:[0,-.9,0],halfExtents:[.65,1.15,.65]},distance:.72},
+};
+export const artworks:Artwork[]=entries.map(a=>({...a,view:{...a.view,...calibrated[a.id]},url:`${import.meta.env.BASE_URL}${models[a.id].url.slice(1)}`,bytes:models[a.id].bytes,image:`${import.meta.env.BASE_URL}images/${a.id}.webp`}));
+export const getArtwork=(id?:string)=>artworks.find(a=>a.id===id);
+export const sourceUrl=(a:Artwork)=>`https://superspl.at/scene/${a.scene}`;
+export const licenseUrl='https://creativecommons.org/licenses/by/4.0/';
